@@ -1,0 +1,492 @@
+PostingID,Skills
+1,Azure
+1,Power BI
+1,GCP
+1,PyTorch
+1,Python
+2,Machine Learning
+2,AWS
+2,Power BI
+2,Python
+2,Kafka
+2,Spark
+3,R
+3,Python
+3,TensorFlow
+3,Tableau
+3,Spark
+3,Machine Learning
+3,Excel
+4,Excel
+4,Kafka
+4,TensorFlow
+4,SQL
+4,ETL
+5,SQL
+5,Deep Learning
+5,TensorFlow
+6,Excel
+6,JavaScript
+6,SQL
+6,R
+6,AWS
+6,Machine Learning
+6,Python
+7,Azure
+7,TensorFlow
+7,Excel
+7,Power BI
+7,Tableau
+7,Spark
+8,GCP
+8,Tableau
+8,Machine Learning
+8,PyTorch
+8,Excel
+9,Power BI
+9,Excel
+9,Machine Learning
+10,Excel
+10,AWS
+10,Tableau
+11,Azure
+11,TensorFlow
+11,ETL
+11,Tableau
+11,GCP
+12,ETL
+12,JavaScript
+12,Java
+12,Spark
+12,PyTorch
+12,Power BI
+12,Excel
+13,SQL
+13,Excel
+13,JavaScript
+13,R
+13,Spark
+14,Machine Learning
+14,Power BI
+14,SQL
+15,Machine Learning
+15,R
+15,Java
+15,PyTorch
+15,Deep Learning
+15,Excel
+16,Power BI
+16,R
+16,TensorFlow
+16,Spark
+16,Azure
+16,AWS
+17,TensorFlow
+17,GCP
+17,PyTorch
+17,Java
+17,Azure
+17,SQL
+18,Deep Learning
+18,R
+18,TensorFlow
+18,Tableau
+19,GCP
+19,SQL
+19,Spark
+20,ETL
+20,Python
+20,SQL
+20,TensorFlow
+20,AWS
+21,GCP
+21,Machine Learning
+21,ETL
+21,Azure
+21,Excel
+22,Machine Learning
+22,Power BI
+22,Java
+22,SQL
+23,GCP
+23,Kafka
+23,SQL
+24,PyTorch
+24,Excel
+24,R
+24,SQL
+24,Power BI
+24,AWS
+25,Java
+25,AWS
+25,Deep Learning
+26,GCP
+26,Machine Learning
+26,TensorFlow
+26,JavaScript
+26,PyTorch
+26,Kafka
+26,SQL
+27,Python
+27,ETL
+27,Java
+27,JavaScript
+27,Excel
+27,GCP
+27,AWS
+28,Tableau
+28,Excel
+28,Python
+28,Power BI
+29,AWS
+29,Java
+29,ETL
+29,Machine Learning
+30,ETL
+30,Azure
+30,Tableau
+30,Java
+30,JavaScript
+30,Python
+30,AWS
+31,Azure
+31,PyTorch
+31,Power BI
+31,Spark
+31,Machine Learning
+31,JavaScript
+31,GCP
+32,Python
+32,Tableau
+32,ETL
+32,GCP
+32,PyTorch
+33,Tableau
+33,Spark
+33,Azure
+33,AWS
+33,PyTorch
+33,SQL
+34,Tableau
+34,GCP
+34,PyTorch
+35,Excel
+35,Deep Learning
+35,Java
+36,Kafka
+36,SQL
+36,AWS
+36,GCP
+36,R
+36,Machine Learning
+37,PyTorch
+37,TensorFlow
+37,Python
+37,Machine Learning
+37,Azure
+37,ETL
+37,Deep Learning
+38,Azure
+38,TensorFlow
+38,R
+39,Spark
+39,PyTorch
+39,TensorFlow
+40,R
+40,Azure
+40,Excel
+41,Java
+41,Deep Learning
+41,Azure
+41,JavaScript
+41,Tableau
+41,PyTorch
+41,GCP
+42,Java
+42,SQL
+42,GCP
+42,Excel
+43,AWS
+43,Azure
+43,Spark
+44,Spark
+44,Python
+44,JavaScript
+45,Machine Learning
+45,AWS
+45,Power BI
+46,GCP
+46,Tableau
+46,Power BI
+46,Excel
+46,JavaScript
+47,Java
+47,JavaScript
+47,TensorFlow
+47,Power BI
+47,SQL
+47,Kafka
+47,R
+48,Tableau
+48,Excel
+48,Kafka
+48,Python
+48,GCP
+49,JavaScript
+49,Excel
+49,GCP
+49,TensorFlow
+49,Python
+50,Java
+50,Deep Learning
+50,Spark
+50,Azure
+50,AWS
+50,JavaScript
+51,Tableau
+51,GCP
+51,Azure
+52,Tableau
+52,Kafka
+52,Python
+52,Deep Learning
+52,Azure
+52,ETL
+52,Power BI
+53,ETL
+53,PyTorch
+53,Power BI
+53,Java
+54,Azure
+54,R
+54,Python
+54,Tableau
+54,PyTorch
+54,Java
+54,Excel
+55,Deep Learning
+55,Tableau
+55,Power BI
+55,PyTorch
+55,Excel
+55,Java
+55,SQL
+56,TensorFlow
+56,GCP
+56,Excel
+56,R
+56,JavaScript
+56,Java
+56,Machine Learning
+57,Azure
+57,AWS
+57,Deep Learning
+57,JavaScript
+57,PyTorch
+57,R
+58,TensorFlow
+58,Excel
+58,Machine Learning
+58,Spark
+58,Deep Learning
+59,Excel
+59,Deep Learning
+59,Azure
+59,Tableau
+59,Java
+60,Spark
+60,Azure
+60,Power BI
+60,SQL
+60,Machine Learning
+60,Python
+61,SQL
+61,JavaScript
+61,Tableau
+61,Java
+62,Deep Learning
+62,Excel
+62,JavaScript
+63,JavaScript
+63,Python
+63,Azure
+63,R
+64,Spark
+64,Python
+64,Deep Learning
+64,PyTorch
+64,Power BI
+64,Java
+64,GCP
+65,Python
+65,ETL
+65,TensorFlow
+65,Machine Learning
+65,AWS
+65,Tableau
+66,GCP
+66,Spark
+66,Tableau
+66,R
+66,Machine Learning
+66,Java
+67,SQL
+67,PyTorch
+67,Excel
+67,GCP
+68,Machine Learning
+68,GCP
+68,AWS
+69,Machine Learning
+69,Spark
+69,Power BI
+69,R
+69,ETL
+69,Azure
+70,Tableau
+70,ETL
+70,Machine Learning
+70,Spark
+70,PyTorch
+71,Power BI
+71,Machine Learning
+71,SQL
+71,Java
+72,Kafka
+72,PyTorch
+72,Spark
+72,Python
+72,Java
+73,Python
+73,AWS
+73,Power BI
+73,SQL
+73,TensorFlow
+73,Kafka
+74,Excel
+74,R
+74,AWS
+74,TensorFlow
+75,Java
+75,JavaScript
+75,TensorFlow
+75,PyTorch
+75,R
+75,SQL
+76,Power BI
+76,Java
+76,AWS
+76,SQL
+77,Azure
+77,Spark
+77,Deep Learning
+77,SQL
+77,Kafka
+78,JavaScript
+78,GCP
+78,Spark
+78,Azure
+78,AWS
+78,Java
+79,Spark
+79,R
+79,PyTorch
+79,GCP
+79,Tableau
+79,SQL
+80,JavaScript
+80,Tableau
+80,ETL
+81,TensorFlow
+81,AWS
+81,Tableau
+82,AWS
+82,Azure
+82,JavaScript
+82,Python
+82,GCP
+82,R
+83,R
+83,GCP
+83,SQL
+83,Azure
+83,TensorFlow
+84,Java
+84,R
+84,Spark
+84,Deep Learning
+84,ETL
+84,Kafka
+84,Azure
+85,Excel
+85,Spark
+85,GCP
+85,Python
+86,SQL
+86,TensorFlow
+86,Java
+86,Spark
+86,Azure
+87,ETL
+87,Deep Learning
+87,Power BI
+87,Python
+87,Java
+88,Deep Learning
+88,PyTorch
+88,R
+88,ETL
+89,GCP
+89,Machine Learning
+89,Power BI
+89,Python
+90,Kafka
+90,GCP
+90,Power BI
+90,Machine Learning
+90,Java
+90,ETL
+90,Spark
+91,AWS
+91,R
+91,JavaScript
+91,ETL
+91,PyTorch
+92,SQL
+92,Spark
+92,R
+92,Tableau
+93,Spark
+93,Python
+93,SQL
+93,ETL
+93,Azure
+93,Machine Learning
+94,GCP
+94,R
+94,AWS
+95,Kafka
+95,AWS
+95,Azure
+95,Excel
+96,Machine Learning
+96,SQL
+96,Deep Learning
+96,Tableau
+97,Python
+97,TensorFlow
+97,Java
+97,R
+97,Deep Learning
+97,Spark
+98,R
+98,Java
+98,JavaScript
+99,Power BI
+99,Tableau
+99,SQL
+99,Excel
+99,Kafka
+100,Machine Learning
+100,AWS
+100,Python
