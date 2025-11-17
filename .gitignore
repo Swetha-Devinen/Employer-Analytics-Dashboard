@@ -37,4 +37,20 @@ Thumbs.db
 .env
 .env.local
 
+# Large Data Files (keep only sample data)
+companies/*.csv
+jobs/*.csv
+mappings/*.csv
+postings.csv
+*.csv
+!data/sample_*.csv
+
+# Unnecessary files
+allfiles.txt
+power-bi/
+
+# Python scripts output
+python/scripts/
+*.pkl
+*.pickle
 
