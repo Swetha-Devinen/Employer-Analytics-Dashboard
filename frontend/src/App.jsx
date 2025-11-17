@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate, useNavigate } from 'react-router-dom'
 import Home from './pages/Home'
 import SalaryOverview from './pages/SalaryOverview'
 import Predictions from './pages/Predictions'
@@ -9,6 +9,7 @@ import './App.css'
 
 function Navigation() {
   const location = useLocation()
+  const navigate = useNavigate()
   const [userEmail, setUserEmail] = useState('')
 
   useEffect(() => {
@@ -21,7 +22,7 @@ function Navigation() {
   const handleLogout = () => {
     localStorage.removeItem('authToken')
     localStorage.removeItem('userEmail')
-    window.location.href = '/login'
+    navigate('/login', { replace: true })
   }
   
   const navItems = [
