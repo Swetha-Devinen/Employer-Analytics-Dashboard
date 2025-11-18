@@ -598,5 +598,9 @@ def serve(path):
 if __name__ == '__main__':
     print("Starting FutureWorks Dashboard API...")
     print(f"Data directory: {DATA_DIR}")
-    app.run(debug=True, port=5000, host='0.0.0.0')
+    # Use PORT environment variable if available (for Render), otherwise default to 5000
+    port = int(os.environ.get('PORT', 5000))
+    # Disable debug mode in production
+    debug_mode = os.environ.get('FLASK_ENV') == 'development'
+    app.run(debug=debug_mode, port=port, host='0.0.0.0')
 
