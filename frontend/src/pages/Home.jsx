@@ -33,6 +33,12 @@ function Home() {
       setSalaryTrends(trendsRes.data)
     } catch (error) {
       console.error('Error loading data:', error)
+      // Show error message to user
+      if (error.response) {
+        console.error('API Error:', error.response.status, error.response.data)
+      } else if (error.request) {
+        console.error('Network Error: Backend may not be running')
+      }
     } finally {
       setLoading(false)
     }
@@ -41,7 +47,33 @@ function Home() {
   const COLORS = ['#1f77b4', '#2ca02c', '#ff7f0e', '#d62728', '#9467bd']
 
   if (loading) {
-    return <div className="loading">Loading dashboard...</div>
+    return (
+      <div className="loading">
+        <div>Loading dashboard...</div>
+        <div style={{ fontSize: '0.9rem', color: '#7f8c8d', marginTop: '1rem' }}>
+          If this takes too long, check that the backend is running on port 5000
+        </div>
+      </div>
+    )
+  }
+
+  // Show error if no data loaded
+  if (!kpis && !salaryByRole.length && !topSkills.length) {
+    return (
+      <div className="loading">
+        <div style={{ color: '#d62728', fontSize: '1.2rem', marginBottom: '1rem' }}>
+          ⚠️ Unable to load data
+        </div>
+        <div style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+          Please check:
+          <ul style={{ textAlign: 'left', display: 'inline-block', marginTop: '0.5rem' }}>
+            <li>Backend server is running (http://localhost:5000)</li>
+            <li>Check browser console (F12) for errors</li>
+            <li>Check Network tab for failed API calls</li>
+          </ul>
+        </div>
+      </div>
+    )
   }
 
   return (
