@@ -32,6 +32,10 @@ export const getPredictionAccuracy = (filters = {}) => {
   return api.get('/analytics/prediction-accuracy', { params: filters })
 }
 
+export const getPredictionKPIs = (filters = {}) => {
+  return api.get('/analytics/prediction-kpis', { params: filters })
+}
+
 export const getCompensationDistribution = () => {
   return api.get('/analytics/compensation-distribution')
 }
@@ -42,6 +46,22 @@ export const getSalaryByRole = (filters = {}) => {
 
 export const getSalaryByLocation = (filters = {}) => {
   return api.get('/analytics/salary-by-location', { params: filters })
+}
+
+export const getSalaryByExperienceLevel = (filters = {}) => {
+  return api.get('/analytics/salary-by-experience-level', { params: filters })
+}
+
+export const getSalaryByIndustry = (filters = {}) => {
+  return api.get('/analytics/salary-by-industry', { params: filters })
+}
+
+export const getSalaryDistribution = (filters = {}) => {
+  return api.get('/analytics/salary-distribution', { params: filters })
+}
+
+export const getSalaryInsightsKPIs = (filters = {}) => {
+  return api.get('/analytics/salary-insights-kpis', { params: filters })
 }
 
 export const getSalaryTrends = (filters = {}) => {
@@ -61,12 +81,12 @@ export const getTopSkills = (filters = {}) => {
 }
 
 // Filters
-export const getRoles = () => {
-  return api.get('/filters/roles')
+export const getIndustries = () => {
+  return api.get('/filters/industries')
 }
 
-export const getLocations = () => {
-  return api.get('/filters/locations')
+export const getExperienceLevels = () => {
+  return api.get('/filters/experience-levels')
 }
 
 export const getCompensationTypes = () => {

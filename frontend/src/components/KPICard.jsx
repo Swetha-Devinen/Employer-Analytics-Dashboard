@@ -1,7 +1,7 @@
 import React from 'react'
 import './KPICard.css'
 
-function KPICard({ title, value, subtitle, icon, trend, color = 'blue', format = 'auto' }) {
+function KPICard({ title, value, subtitle, trend, color = 'blue', format = 'auto' }) {
   const formatValue = (val) => {
     if (format === 'text') {
       return val
@@ -28,7 +28,6 @@ function KPICard({ title, value, subtitle, icon, trend, color = 'blue', format =
   return (
     <div className={`kpi-card kpi-card-${color}`}>
       <div className="kpi-header">
-        <div className="kpi-icon">{icon}</div>
         <div className="kpi-title">{title}</div>
       </div>
       <div className="kpi-value">{formatValue(value)}</div>

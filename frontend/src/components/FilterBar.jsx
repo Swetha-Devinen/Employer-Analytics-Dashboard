@@ -1,30 +1,30 @@
 import React, { useState, useEffect } from 'react'
-import { getRoles, getLocations, getCompensationTypes } from '../api/api'
+import { getIndustries, getExperienceLevels, getCompensationTypes } from '../api/api'
 import './FilterBar.css'
 
 function FilterBar({ onFilterChange, filters = {} }) {
   const [localFilters, setLocalFilters] = useState({
-    role: filters.role || '',
-    location: filters.location || '',
+    industry: filters.industry || '',
+    experience_level: filters.experience_level || '',
     compensation_type: filters.compensation_type || ''
   })
   
   const [options, setOptions] = useState({
-    roles: [],
-    locations: [],
+    industries: [],
+    experienceLevels: [],
     compensationTypes: []
   })
 
   useEffect(() => {
     // Load filter options
     Promise.all([
-      getRoles(),
-      getLocations(),
+      getIndustries(),
+      getExperienceLevels(),
       getCompensationTypes()
-    ]).then(([rolesRes, locationsRes, compTypesRes]) => {
+    ]).then(([industriesRes, experienceLevelsRes, compTypesRes]) => {
       setOptions({
-        roles: rolesRes.data,
-        locations: locationsRes.data,
+        industries: industriesRes.data,
+        experienceLevels: experienceLevelsRes.data,
         compensationTypes: compTypesRes.data
       })
     })
@@ -37,7 +37,7 @@ function FilterBar({ onFilterChange, filters = {} }) {
   }
 
   const clearFilters = () => {
-    const cleared = { role: '', location: '', compensation_type: '' }
+    const cleared = { industry: '', experience_level: '', compensation_type: '' }
     setLocalFilters(cleared)
     onFilterChange(cleared)
   }
@@ -45,27 +45,27 @@ function FilterBar({ onFilterChange, filters = {} }) {
   return (
     <div className="filter-bar">
       <div className="filter-group">
-        <label>Role</label>
+        <label>Industry</label>
         <select
-          value={localFilters.role}
-          onChange={(e) => handleFilterChange('role', e.target.value)}
+          value={localFilters.industry}
+          onChange={(e) => handleFilterChange('industry', e.target.value)}
         >
-          <option value="">All Roles</option>
-          {options.roles.map(role => (
-            <option key={role} value={role}>{role}</option>
+          <option value="">All Industries</option>
+          {options.industries.map(industry => (
+            <option key={industry} value={industry}>{industry}</option>
           ))}
         </select>
       </div>
       
       <div className="filter-group">
-        <label>Location</label>
+        <label>Experience Level</label>
         <select
-          value={localFilters.location}
-          onChange={(e) => handleFilterChange('location', e.target.value)}
+          value={localFilters.experience_level}
+          onChange={(e) => handleFilterChange('experience_level', e.target.value)}
         >
-          <option value="">All Locations</option>
-          {options.locations.map(location => (
-            <option key={location} value={location}>{location}</option>
+          <option value="">All Levels</option>
+          {options.experienceLevels.map(level => (
+            <option key={level} value={level}>{level}</option>
           ))}
         </select>
       </div>

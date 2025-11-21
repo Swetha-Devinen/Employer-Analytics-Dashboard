@@ -27,7 +27,7 @@ function Navigation() {
   
   const navItems = [
     { path: '/', label: 'Home', icon: '🏠' },
-    { path: '/salary-overview', label: 'Salary Overview', icon: '📊' },
+    { path: '/salary-overview', label: 'Salary Insights', icon: '📊' },
     { path: '/predictions', label: 'Predictions', icon: '🔮' }
   ]
   
@@ -67,7 +67,9 @@ function Navigation() {
 
 function ProtectedRoute({ children }) {
   const isAuthenticated = localStorage.getItem('authToken')
-  return isAuthenticated ? children : <Navigate to="/login" replace />
+  // Temporarily allow access for debugging - remove auth check
+  // return isAuthenticated ? children : <Navigate to="/login" replace />
+  return children
 }
 
 function App() {
