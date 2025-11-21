@@ -38,10 +38,10 @@ Thumbs.db
 .env.local
 
 # Large Data Files
-# Note: data/sample_*.csv files contain REAL data (transformed from Real Data folder)
-# The "sample_" prefix is just a naming convention for the dashboard files
+# Note: data/transformed_*.csv files contain REAL data (transformed from Real Data folder)
+# These are required for dashboard deployment
 *.csv
-!data/sample_*.csv
+!data/transformed_*.csv
 !Real Data/**/*.csv
 # Exclude large postings.csv (492MB - exceeds GitHub 100MB limit)
 Real Data/postings.csv
