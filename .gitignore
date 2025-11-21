@@ -37,17 +37,17 @@ Thumbs.db
 .env
 .env.local
 
-# Large Data Files (keep only sample data)
-companies/*.csv
-jobs/*.csv
-mappings/*.csv
-postings.csv
+# Large Data Files
+# Note: data/sample_*.csv files contain REAL data (transformed from Real Data folder)
+# The "sample_" prefix is just a naming convention for the dashboard files
 *.csv
 !data/sample_*.csv
+!Real Data/**/*.csv
+# Exclude large postings.csv (492MB - exceeds GitHub 100MB limit)
+Real Data/postings.csv
 
 # Unnecessary files
 allfiles.txt
-power-bi/
 
 # Python scripts output
 python/scripts/

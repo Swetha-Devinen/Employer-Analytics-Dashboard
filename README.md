@@ -32,16 +32,22 @@ cd frontend
 npm install
 ```
 
-### 3. Generate Sample Data (if needed)
+### 3. Transform Real Data and Train Models
 
 ```bash
-cd python
+# Transform real data from "Real Data" folder
+cd scripts
+python transform_real_data.py
+
+# Train ML models on real data
+cd ../python
 python train_and_predict.py
 ```
 
-This will generate:
-- `data/sample_predictions.csv`
-- `python/salary_model.pkl`
+This will:
+- Transform real data from `Real Data/` folder to `data/` folder
+- Generate predictions using ML models trained on real data
+- Save trained models to `python/salary_model.pkl`
 
 ## 🚀 Running the Application
 
